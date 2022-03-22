@@ -7,7 +7,7 @@
 	   
   5 Cube is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.<br>
 	   
-  5 Cube got built behind some cool features like the cube interface, object drag-n-drop between threads with full object serialization and xml.<br>
+  5 Cube got built behind some cool features like the cube interface, object drag-n-drop between browser windows with full object serialization and xml.<br>
          
   First step, use the left side panel password and salt fields to create the hash to insert in the config file. Remember to manually set there also the salt value.<br>
 	   
