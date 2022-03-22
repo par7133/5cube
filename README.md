@@ -1,7 +1,7 @@
 # 5cube
 5 Cube, every person its propects. Your procurement digital solution - GPL License
 
-  Hello and welcome to 5 Cube!<br><br>
+  Hello and welcome to 5 Cube!<br>
 	   
   5 Cube is a light, simple, p2p software on premise to source your prospects. Your procurement digital solution.<br><br>
 	   
