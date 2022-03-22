@@ -24,6 +24,6 @@
   
 ###Screenshots:
 
- ![5cube in action](/Public/res/screenshot1.jpg)<br>
- ![5cube in action](/Public/res/screenshot2.jpg)<br>
- ![5cube in action](/Public/res/screenshot3.jpg)
+ ![5cube in action](/Public/res/Screenshot1.jpg)<br>
+ ![5cube in action](/Public/res/Screenshot2.jpg)<br>
+ ![5cube in action](/Public/res/Screenshot3.jpg)
