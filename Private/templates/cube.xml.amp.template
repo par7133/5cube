@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<details>
+  <detail face="address">
+    <name></name>
+    <address-line1></address-line1>
+    <address-line2></address-line2>
+    <address-line3></address-line3>
+    <city-zip-prov></city-zip-prov>
+    <country></country>
+  </detail>
+  <detail face="contacts">
+    <tel></tel>
+    <fax></fax>
+    <cell></cell>
+  </detail>  
+  <detail face="other info">
+    <business-type></business-type>
+    <guid></guid>
+    <description></description>
+  </detail>  
+  <detail face="menu">
+    <menu1 type="pic">https://</menu1>
+    <menu2 type="pic">https://</menu2>
+    <menu3 type="pic">https://</menu3>
+  </detail>
+  <detail face="pictures">    
+    <pic1 type="pic">https://</pic1>
+    <pic2 type="pic">https://</pic2>
+    <pic3 type="pic">https://</pic3>
+    <pic4 type="pic">https://</pic4>
+    <pic5 type="pic">https://</pic5>
+  </detail>
+  <detail face="password">
+    <password></password>
+  </detail>
+</details>

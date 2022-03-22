@@ -1,0 +1,101 @@
+/**
+ * Copyright 2021, 2024 5 Mode
+ *
+ * This file is part of 5 Cube.
+ *
+ * 5 Cube is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * 5 Cube is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.  
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with 5 Cube. If not, see <https://www.gnu.org/licenses/>.
+ *
+ * style.css
+ * 
+ * Style sheet.
+ *
+ * @author Daniele Bonini <my25mb@aol.com>
+ * @copyrights (c) 2016, 2024, 5 Mode
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+
+body {
+  background:#0d0d0d;
+  /*background-image:url('../res/bg.jpg');*/
+}
+.cube {
+  float:left;
+  background:url(../res/1cube.png);
+  background-size:cover;
+  width:130px;
+  height:159px;
+  margin:50px;
+  cursor:pointer;
+}
+.cubename {
+  position:relative;
+  top:+170px;
+  text-align:center;
+  font-family:'Bungee Hairline';
+  font-weight:900;
+  font-size:34px;
+}
+.emptyfield{
+  border: 1px solid red;
+}
+.editemptyfield{
+  border-bottom: 3px dashed red;
+}
+#facelet1:hover {
+  text-decoration: underline;
+}
+#facelet2:hover {
+  text-decoration: underline;
+}
+#facelet3:hover {
+  text-decoration: underline;
+}
+#footerCont {
+  position: fixed; 
+  top: 2000px; 
+  left:-10px;
+  width: 102%; 
+  border: 1px solid #C2DBF2; 
+  padding: 7px; 
+  background: #ffedf0; 
+  opacity: 0.1;
+  color:white; 
+  font-family: Sans;
+  font-size: 12px; 
+  text-align: center; 
+  z-index: 99990;
+  height: 23px;
+}
+#footer {
+  position: fixed;
+  float: right;
+  top: 2000px; 
+  left:-10px;
+  width: 100%; 
+  border: 0px solid #C2DBF2; 
+  padding: 7px; 
+  opacity: 1.0;
+  color:black; 
+  font-family: Sans;
+  font-size: 12px; 
+  font-weight: 400;
+  text-align: right; 
+  z-index: 99991;
+}
+input {
+  border:1px solid #d4b0dc;
+  background: transparent; 
+  height: 30px;
+}

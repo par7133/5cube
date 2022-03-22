@@ -1,0 +1,17 @@
+Options -MultiViews
+RewriteEngine On
+
+RewriteBase /
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+
+# Sitemap
+RewriteRule "^sitemap.xml$" "/index.php?url=sitemap&target=google" [L]
+RewriteRule "^urllist.txt$" "/index.php?url=sitemap&target=yahoo" [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Bootstrap
+RewriteRule "^(.+)" "/index.php?url=$1" [QSA,L]

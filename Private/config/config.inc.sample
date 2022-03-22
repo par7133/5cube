@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * Copyright 2021, 2024 5 Mode
+ *
+ * This file is part of 5 Cube.
+ *
+ * 5 Cube is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * 5 Cube is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.  
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with 5 Cube. If not, see <https://www.gnu.org/licenses/>.
+ *
+ * config.inc
+ * 
+ * 5 Cube configuration settings.
+ *
+ * @author Daniele Bonini <my25mb@aol.com>
+ * @copyrights (c) 2021, 2024, 5 Mode     
+ */
+
+define('DEBUG', true);
+ 
+define('APP_NAME', "5 Cube");
+
+// password: 
+// salt: 
+define('APP_HASH', "");
+
+define('APP_SPLASH', true);
+
+define('APP_HOST', "5cu.be");
+define('APP_PATH', "/var/www/YourWebApp/Public/static");
+define('APP_SCRIPT_PATH', "/var/www/YourWebApp/Private/scripts");
+define('APP_AJAX_PATH', "/var/www/YourWebApp/Private/scripts_ajax");
+define('APP_ERROR_PATH', "/var/www/YourWebApp/Private/error");
+define('APP_SALT', "yoursalt");
+define('APP_TEMPLATE_PATH', "/var/www/YourWebApp/Private/Private/templates");
+define('APP_DATA_PATH', "/var/www/YourWebApp/Private/data");
+
+// Default Locale, in two letters format
+define('APP_LOCALE', "EN");
+
+define('BUSINESS_TYPE', "Sushi");
+define('BUSINESS_CITY_ZIP_PROV', "Bologna 40100 BO");
+define('BUSINESS_COUNTRY', "Italy");
+
+define('EDITOR_PASSWORD', "");
+
+$CONFIG = [
+
+   'DEBUG' => true,
+
+   'APP' => [
+      'NAME' => "5 Cube",
+      // password: 
+      // salt:  
+      'HASH' => "",
+      'SPLASH' => true,
+      'HOST' => "5cu.be", 
+      'PATH' => "/var/www/YourWebApp/Public/static",
+      'SCRIPT_PATH' => "/var/www/YourWebApp/Private/scripts",
+      'AJAX_PATH' => "/var/www/YourWebApp/Private/scripts_ajax",
+      'ERROR_PATH' => "/var/www/YourWebApp/Private/error",
+      'SALT' => "yoursalt",
+      'TEMPLATE_PATH' => "/var/www/YourWebApp/Private/templates", 
+      'DATA_PATH' => "/var/www/YourWebApp/Private/data",
+      // Default Locale, in two letters format
+      'LOCALE' => "EN"
+      ],
+    
+   'BUSINESS' => [
+      'TYPE' => "Sushi",
+      'CITY_ZIP_PROV' => "Bologna 40100 BO",
+      'COUNTRY' => "Italy"
+      ],
+    
+   'EDITOR' => [
+      'PASSWORD' => ""  
+      ]
+    
+ ];  
+
