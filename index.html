@@ -181,12 +181,13 @@ function setFooterPos2() {
     $("#footer").css("top", parseInt( window.innerHeight - $("#footer").height() - tollerance + 6) + "px");
   }
 }
+setTimeout("setFooterPos2()", 2000);
 
-window.addEventListener("load", function() {
-    
-  setTimeout("setFooterPos2()", 4000);
-
-}, true);
+//window.addEventListener("load", function() {
+//    
+//  setTimeout("setFooterPos2()", 4000);
+//
+//}, true);
   
 </script>  
 
