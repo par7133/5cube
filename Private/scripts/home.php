@@ -79,13 +79,13 @@ if ($password != PHP_STR): ?>
  -->
   
     
-  <title>5 Cube: 1 cube, all your info..</title>
+  <title>5 Cube:  Every person its prospects.</title>
 	
   <link rel="shortcut icon" href="/favicon.ico?v=<?php echo(time()); ?>" />
     
   <meta name="description" content="Welcome to <?php echo(APP_NAME); ?>"/>
   <meta name="author" content="5 Mode"/> 
-  <meta name="robots" content="noindex"/>
+  <meta name="robots" content="index,follow"/>
   
   <script src="/js/jquery-3.1.0.min.js" type="text/javascript"></script>
   <script src="/js/common.js" type="text/javascript"></script>
@@ -432,7 +432,7 @@ if ($password != PHP_STR): ?>
       function mystart() {
         bConnectionOK = false;
         var xhttp = new XMLHttpRequest();
-        var xmluri = "http://<?PHP echo(APP_HOST);?>/getxml?f=" + this.formalName;
+        var xmluri = "https://<?PHP echo(APP_HOST);?>/getxml?f=" + this.formalName;
         //alert(xmluri);
         xhttp.open("GET", xmluri, true);  
         xhttp.send();
@@ -440,13 +440,15 @@ if ($password != PHP_STR): ?>
           if (this.readyState == 4 && this.status == 200) {
             bConnectionOK = true;
             
-            cubes[parseInt(myformalName.substr(4))-1].xml = this.responseText;
+            xml = this.responseText
+            
+            cubes[parseInt(myformalName.substr(4))-1].xml = xml;
             //$("#_read_xml_" + myformalName).val(xml);
 
             //alert(this.responseText);
 
             re = new RegExp("\<guid\>(.*)\<\/guid\>", "igsu");
-            a = re.exec(this.responseText);
+            a = re.exec(xml);
             if (!a || a.length===0) {
               document.write("Data access error (#2)<br><br>");
               return;
@@ -457,7 +459,7 @@ if ($password != PHP_STR): ?>
             }  
 
             re = new RegExp("\<password\>(.*)\<\/password\>", "igsu");
-            a = re.exec(this.responseText);
+            a = re.exec(xml);
             if (!a || a.length===0) {
               document.write("Data access error (#3)<br><br>");
               return;
@@ -1130,7 +1132,8 @@ if ($password != PHP_STR): ?>
       
       $("#vplayer").get(0).pause();
       $("#HCsplash").css("display","none");
-     
+      $(".header").show();
+      
       //fetchDataIntervalId = setInterval("_fetchData()", 2000);
     }			
 
@@ -1327,7 +1330,7 @@ if ($password != PHP_STR): ?>
     
     <body>
 
-     <div id="HCsplash" style="padding-top: 160px; text-align:center;color:#d4b0dc;font-family:'Rampart One';display:none;">
+     <div id="HCsplash" style="padding-top: 40px; text-align:center;color:#d4b0dc;font-family:'Rampart One';display:none;">
          <div id="myh1" style="position:relative; top:80px;"><H1>5 CUBE</H1></div><br><br>
          <video id="vplayer">
             <source src="../res/cube.mp4" type="video/mp4">
@@ -1336,6 +1339,10 @@ if ($password != PHP_STR): ?>
      
       <form id="frmHC" method="POST" action="/" target="_self" enctype="multipart/form-data">
       
+          <div class="header" style="margin-top:18px; display:none;">
+              &nbsp;&nbsp;<a href="http://5cube.org" target="_self" style="color:#d4b0dc; text-decoration: none;"><img src="/res/1cube.png" style="width:25px;">&nbsp;5 Cube</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/par7133/5cube" style="color:#d4b0dc;"><span style="color:#d4b0dc;">on</span> github</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:info@5cube.org" style="color:#d4b0dc;"><span style="color:#d4b0dc;">for</span> feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+39-331-4029415" style="font-size:13px;background-color:#15c60b;border:2px solid #15c60b;color:#000000;height:27px;text-decoration:none;">&nbsp;&nbsp;get support&nbsp;&nbsp;</a>
+         </div>
+        
           <div id="debugdisplay" style="float:left;position:absolute;top:680px;left:50px;width:255px;display:none;">
                <input id="hcube" type="text"><br>
                <input id="vcube" type="text"><br>
@@ -1399,7 +1406,7 @@ if ($password != PHP_STR): ?>
 
     <div class="footer">
     <div id="footerCont">&nbsp;</div>
-    <div id="footer"><span style="background:#E1E1E1;color:black;opacity:1.0;margin-right:10px;">&nbsp;&nbsp;A <a href="http://5mode.com">5 Mode</a> project and <a href="http://demo.5mode.com">WYSIWYG</a> system. Some rights reserved.</span></div>	
+    <div id="footer"><span style="background:#0d0d0d;color:#d4b0dc;opacity:1.0;margin-right:10px;">&nbsp;&nbsp;A <a href="http://5mode.com" style="color:#d4b0dc; text-decoration:underline;">5 Mode</a> project and <a href="http://demo.5mode.com" style="color:#d4b0dc; text-decoration:underline;">WYSIWYG</a> system. Some rights reserved.</span></div>	
     </div>
 
      <script>
