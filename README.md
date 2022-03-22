@@ -22,7 +22,7 @@
      
   Hope you can enjoy it and let us know about any feedback: <a href="mailto:info@5cube.org" style="color:#e6d236;">info@5cube.org</a>
   
-###Screenshots:
+  ###Screenshots:
 
  ![5cube in action](/Public/res/Screenshot1.jpg)<br>
  ![5cube in action](/Public/res/Screenshot2.jpg)<br>
