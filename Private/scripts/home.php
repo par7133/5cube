@@ -172,6 +172,7 @@ if ($password != PHP_STR): ?>
       this.vcur = [this.vcube[2], this.vcube[3]];      
       
       // Methods
+      this.updateCube = myupdateCube;
       this.turnLeft = myturnLeft;
       this.turnRight = myturnRight;
       this.turnUp = myturnUp;
@@ -195,7 +196,7 @@ if ($password != PHP_STR): ?>
        * @param char Update direction
        * @returns void
        */
-      function _updateCube(tthis, upddir) {
+      function myupdateCube(tthis, upddir) {
       
         if (upddir=='h') {
 
@@ -229,7 +230,7 @@ if ($password != PHP_STR): ?>
       function myturnLeft() {
         var newhlist = [];
         
-        newfirst = this.hlist.pop();
+        var newfirst = this.hlist.pop();
 
         newhlist[0] = newfirst;
         newhlist[1] = this.hlist[0];
@@ -240,7 +241,7 @@ if ($password != PHP_STR): ?>
         this.jolly = this.hlist[3];
         
         // Save the horizzontal movement..
-        _updateCube(this, 'h');
+        this.updateCube(this, 'h');
       }
 
       /*
@@ -251,7 +252,7 @@ if ($password != PHP_STR): ?>
       function myturnRight() {
         var newhlist = [];
         
-        newlast = this.hlist.shift();
+        var newlast = this.hlist.shift();
 
         newhlist[0] = this.hlist[0];
         newhlist[1] = this.hlist[1];
@@ -262,7 +263,7 @@ if ($password != PHP_STR): ?>
         this.jolly = this.hlist[3];
         
         // Save the horizzontal movement..
-        _updateCube(this, 'h');
+        this.updateCube(this, 'h');
       }
 
       /*
@@ -273,7 +274,7 @@ if ($password != PHP_STR): ?>
       function myturnUp() {
         var newvlist = [];
         
-        newfirst = this.vlist.pop();
+        var newfirst = this.vlist.pop();
 
         newvlist[0] = newfirst;
         newvlist[1] = this.vlist[0];
@@ -284,7 +285,7 @@ if ($password != PHP_STR): ?>
         this.jolly = this.vlist[3];
         
         // Save the vertical movement..
-        _updateCube(this, 'v');
+        this.updateCube(this, 'v');
       }
 
       /*
@@ -295,7 +296,7 @@ if ($password != PHP_STR): ?>
       function myturnDown() {
         var newvlist = [];
         
-        newlast = this.vlist.shift();
+        var newlast = this.vlist.shift();
 
         newvlist[0] = this.vlist[0];
         newvlist[1] = this.vlist[1];
@@ -306,7 +307,7 @@ if ($password != PHP_STR): ?>
         this.jolly = this.vlist[3];
 
         // Save the vertical movement..
-        _updateCube(this, 'v');
+        this.updateCube(this, 'v');
       }
       
       /*
