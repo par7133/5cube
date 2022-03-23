@@ -117,23 +117,33 @@ if ($password !== PHP_STR) {
  function startApp() {
 
  <?php 
-   chdir(APP_DATA_PATH);
-   foreach (glob("*.xml") as $filename) { ?>
-     i = parseInt("<?php echo(substr(substr($filename, 0, strlen($filename)-4),4));?>");
-     $("#cubeList").html($("#cubeList").html()+"<div id='cube" + i + "' class='cube' order='" + i + "' onclick='selCube(this)'   draggable='true' ondragstart='onDragStart(this, event);' onmouseover='onMouseOver();'><div id='cube" + i + "name' class='cubename'>cube#" + i + "</div></div>");
-     $("#cube" + i + "name").html(businessType + "#" + i);
-     if (i<10) {
-       newFormalName = "cube" + "00" + i;
-     } else if (i<100) {
-       newFormalName = "cube" + "0" + i;
-     } else {
-       newFormalName = "cube" + i;
-     }  
-     cubes[i-1] = new myCube(businessType + "#" + i, newFormalName, "<?php echo(APP_HOST)?>");
-     cubes[i-1].start();
-     totcubes = i;
+
+  if ($password!=PHP_STR) {
+    $cubedisplay="inline";
+  } else {
+    $cubedisplay="none";
+  }
+ 
+  chdir(APP_DATA_PATH);
+
+  foreach (glob("*.xml") as $filename) { ?>
+
+    i = parseInt("<?php echo(substr(substr($filename, 0, strlen($filename)-4),4));?>");
+    $("#cubeList").html($("#cubeList").html()+"<div id='cube" + i + "' class='cube' style='display:<?PHP echo($cubedisplay); ?>' order='" + i + "' onclick='selCube(this)'   draggable='true' ondragstart='onDragStart(this, event);' onmouseover='onMouseOver();'><div id='cube" + i + "name' class='cubename'>cube#" + i + "</div></div>");
+    $("#cube" + i + "name").html(businessType + "#" + i);
+    if (i<10) {
+      newFormalName = "cube" + "00" + i;
+    } else if (i<100) {
+      newFormalName = "cube" + "0" + i;
+    } else {
+      newFormalName = "cube" + i;
+    }  
+    cubes[i-1] = new myCube(businessType + "#" + i, newFormalName, "<?php echo(APP_HOST)?>");
+    cubes[i-1].start();
+    totcubes = i;
+    
  <?php
-   }    
+   }
  ?>
 
    $("#cubeList").show();
@@ -187,6 +197,9 @@ if ($password !== PHP_STR) {
    myleft = parseInt((window.innerWidth - $("#cubelinks").width()) / 2);
    $("#cubelinks").css("top", (mytop-170)+"px");
    $("#cubelinks").css("left", (myleft+240)+"px");
+
+   mytop = parseInt(window.innerHeight - ($("#passworddisplay").height() + 60));
+   $("#passworddisplay").css("top", mytop+"px");
 
  }
 
