@@ -82,11 +82,11 @@ function onDrop(e) {
     if (cubes[i].getpassword() === newcube.getpassword()) {
       pwd2 = prompt("password confirmation:");
       if (cubes[i].getpassword() != pwd2) {
-        $("#cubeList").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permission denied.");  
+        $("#cubeList").html("<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permission denied.");  
         return;
       }  
     } else {
-      $("#cubeList").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permission denied.");  
+      $("#cubeList").html("<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permission denied.");  
       return;
     }  
 
