@@ -1,5 +1,5 @@
 # 5 Cube
-5 Cube, every person its prospects. Your procurement on premise solution - GPL License
+Every person its prospects. Your procurement on premise solution - GPL License
 
   Hello and welcome to 5 Cube!<br>
 	   
