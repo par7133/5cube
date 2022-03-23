@@ -48,7 +48,7 @@ define('APP_DATA_PATH', "/var/www/YourWebApp/Private/data");
 // Default Locale, in two letters format
 define('APP_LOCALE', "EN");
 
-define('BUSINESS_TYPE', "Sushi");
+define('BUSINESS_TYPE', "Prosp");
 define('BUSINESS_CITY_ZIP_PROV', "Bologna 40100 BO");
 define('BUSINESS_COUNTRY', "Italy");
 
@@ -77,7 +77,7 @@ $CONFIG = [
       ],
     
    'BUSINESS' => [
-      'TYPE' => "Sushi",
+      'TYPE' => "Prosp",
       'CITY_ZIP_PROV' => "Bologna 40100 BO",
       'COUNTRY' => "Italy"
       ],
