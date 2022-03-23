@@ -18,6 +18,7 @@ Every person its prospects. Your procurement on premise solution - GPL License
      <li>Set the default Locale.</li>
      <li>Set the Business Type, City_Zip_Prov and Country of your prospects.</li>
      <li>Set the Editor Password of your cubes. This will be important to confirm your cube upload by dropping it and saving it.</li>
+     <li>In Public/js/cube-code.js, in mystart class method, check if you are using 'http' or 'https'.</li>	
   </ol>	
      
   Hope you can enjoy it and let us know about any feedback: <a href="mailto:info@5cube.org" style="color:#e6d236;">info@5cube.org</a>
