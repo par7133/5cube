@@ -79,7 +79,7 @@ if ($password !== PHP_STR) {
  -->
   
     
-  <title>5 Cube:  Every person its prospects.</title>
+  <title>5 Cube: Every person its prospects.</title>
 	
   <link rel="shortcut icon" href="/favicon.ico?v=<?php echo(time()); ?>" />
     
