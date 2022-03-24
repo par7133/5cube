@@ -61,6 +61,6 @@
   </li>
   </ol>  
   
-  Apache instead should have DocumentRoot pointing to /path/to/YourHomomm/Public .   
+  Apache instead should have DocumentRoot pointing to /path/to/Your5cube/Public .   
   
   Dan
