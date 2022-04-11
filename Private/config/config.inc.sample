@@ -52,6 +52,8 @@ define('BUSINESS_TYPE', "Prosp");
 define('BUSINESS_CITY_ZIP_PROV', "Bologna 40100 BO");
 define('BUSINESS_COUNTRY', "Italy");
 
+// sha256 password
+// pw: password
 define('EDITOR_PASSWORD', "");
 
 $CONFIG = [
@@ -77,12 +79,14 @@ $CONFIG = [
       ],
     
    'BUSINESS' => [
-      'TYPE' => "Prosp",
+      'TYPE' => "Sushi",
       'CITY_ZIP_PROV' => "Bologna 40100 BO",
       'COUNTRY' => "Italy"
       ],
     
    'EDITOR' => [
+      // sha256 password
+      // pw: password
       'PASSWORD' => ""  
       ]
     
