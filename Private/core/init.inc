@@ -40,6 +40,10 @@ if (!file_exists(APP_DATA_PATH)) {
 if (!file_exists(APP_TEMPLATE_PATH)) {
   die("Template folder doesn't exist. You must have a tempate folder in your web app private path and configure it properly inside the config file.");
 }	
+if (EDITOR_PASSWORD === "" || (strlen(EDITOR_PASSWORD) < 64)) {
+  die("Editor password must be set (with a 6 chars min length). You must generate an editor password and configure it properly inside the config file.");
+}  
+
 if (!file_exists(APP_DATA_PATH . "/cube001.xml")) {
   // Generating data from the template..
 
@@ -48,7 +52,7 @@ if (!file_exists(APP_DATA_PATH . "/cube001.xml")) {
     if (!file_exists(APP_DATA_PATH . "/cube00$n.xml")) {
       // -- generating cubeN.xml
       copy(APP_TEMPLATE_PATH . "/cube.xml.amp.template",APP_DATA_PATH . "/cube00$n.xml");
-      //chmod(APP_DATA_PATH . "/cube$n.xml", 0777);
+      //chmod(APP_DATA_PATH . "/cube00$n.xml", 0777);
       $xmlStr = file_get_contents(APP_DATA_PATH . "/cube00$n.xml");
       $newGuid = mb_substr(hash("sha256", mt_rand() . mt_rand() . APP_SALT, false), 0, 32);
       $xmlStr = str_replace("<guid></guid>", "<guid>" . $newGuid . "</guid>", $xmlStr);
@@ -59,9 +63,6 @@ if (!file_exists(APP_DATA_PATH . "/cube001.xml")) {
       $xmlStr = file_put_contents(APP_DATA_PATH . "/cube00$n.xml", $xmlStr);
     }  
   }  
-}  
-if (EDITOR_PASSWORD === "" || (strlen(EDITOR_PASSWORD) < 6)) {
-  die("Editor password must be set (with a 6 chars min length). You must generate an editor password and configure it properly inside the config file.");
 }  
 
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "const.inc";
