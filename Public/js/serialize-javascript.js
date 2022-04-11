@@ -3,7 +3,7 @@ Copyright (c) 2014, Yahoo! Inc. All rights reserved.
 Copyright (c) 2021, 5 Mode, requirements, installation and code changes.
 Copyrights licensed under the New BSD License.
 See the accompanying LICENSE file for terms.
-ver. 6.0.0
+ver. 6.0.0c
 */
 
 'use strict';
@@ -39,7 +39,7 @@ function escapeUnsafeChars(unsafeChar) {
 }
 
 // upd - 5 Mode
-function rnd(min, max) {
+function sjrnd(min, max) {
   var ress = "";
   var resa = [];
   min = Math.ceil(min);
@@ -56,7 +56,7 @@ function rnd(min, max) {
 function generateUID() {
     // upd - 5 Mode
     //var bytes = randomBytes(UID_LENGTH);
-    var bytes = rnd(1000000000000000, 9999999999999999);
+    var bytes = sjrnd(1000000000000000, 9999999999999999);
     // ---
     var result = '';
     for(var i=0; i<UID_LENGTH; ++i) {
