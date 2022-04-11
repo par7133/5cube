@@ -1,5 +1,5 @@
 # 5 Cube
-Every person its prospects. Your p2p, drag-n-drop solution - GPL License
+Every person its prospects. Here your p2p, drag-n-drop solution - GPL License
 
   Hello and welcome to 5 Cube!<br>
 	   
