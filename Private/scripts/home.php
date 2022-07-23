@@ -782,7 +782,7 @@ if ($password !== PHP_STR) {
       <form id="frmHC" method="POST" action="/" target="_self" enctype="multipart/form-data">
       
           <div class="header" style="margin-top:18px; display:none;">
-              &nbsp;&nbsp;<a href="http://5cube.org" target="_self" style="color:#d4b0dc; text-decoration: none;"><img src="/res/1cube.png" style="width:25px;">&nbsp;5 Cube</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/par7133/5cube" style="color:#d4b0dc;"><span style="color:#d4b0dc;">on</span> github</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:info@5cube.org" style="color:#d4b0dc;"><span style="color:#d4b0dc;">for</span> feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+39-331-4029415" style="font-size:13px;background-color:#15c60b;border:2px solid #15c60b;color:#000000;height:27px;text-decoration:none;">&nbsp;&nbsp;get support&nbsp;&nbsp;</a>
+              &nbsp;&nbsp;<a href="http://5cube.5mode.com" target="_self" style="color:#d4b0dc; text-decoration: none;"><img src="/res/1cube.png" style="width:25px;">&nbsp;5 Cube</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/par7133/5cube" style="color:#d4b0dc;"><span style="color:#d4b0dc;">on</span> github</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:my25mb@aol.com" style="color:#d4b0dc;"><span style="color:#d4b0dc;">for</span> feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+39-331-4029415" style="font-size:13px;background-color:#15c60b;border:2px solid #15c60b;color:#000000;height:27px;text-decoration:none;">&nbsp;&nbsp;get support&nbsp;&nbsp;</a>
          </div>
         
           <div id="debugdisplay" style="float:left;position:absolute;top:680px;left:50px;width:255px;display:none;">
