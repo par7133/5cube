@@ -30,6 +30,10 @@ body {
   background:#0d0d0d;
   /*background-image:url('../res/bg.jpg');*/
 }
+.bbb {
+  color: #7bca2e;
+  text-decoration: underline;
+}
 .cube {
   float:left;
   background:url(../res/1cube.png);
@@ -98,4 +102,28 @@ input {
   border:1px solid #d4b0dc;
   background: transparent; 
   height: 30px;
+}
+#originsDisplay {
+  float:left;
+  position:fixed;
+  top:680px;
+  left:20px;
+  width:275px;
+  height:120px;
+  font-family: Monospace, Verdana, Serif;
+  font-size: 14px;
+  background-color: #020401;
+  border: 3px solid lightgray;
+  text-align:left;
+  color: #FFFFFF;
+  white-space:nowrap; 
+  font-weight:900;
+  padding:10px;
+  padding-top:4px;
+  z-index:99999;
+  display:none;
+}
+.originLabel {
+  color: #7bca2e;
+  font-weight:900;
 }
