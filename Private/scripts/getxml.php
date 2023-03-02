@@ -32,7 +32,8 @@ header("Content-type: text/xml");
 //
 // PARAMETER VALIDATION
 //
-$filename = filter_input(INPUT_GET, "f");
+$filename = filter_input(INPUT_GET, "f")??"";
+$filename = strip_tags($filename);
 //switch ($filename) {
 //  case "cube1":
 //  case "cube2":  

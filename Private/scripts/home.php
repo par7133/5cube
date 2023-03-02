@@ -28,9 +28,11 @@
 
 $curLocale = APP_LOCALE;
 
-$password = filter_input(INPUT_POST, "Password");
+$password = filter_input(INPUT_POST, "Password")??"";
+$password = strip_tags($password);
 if ($password==PHP_STR) {
-  $password = filter_input(INPUT_POST, "Password2");
+  $password = filter_input(INPUT_POST, "Password2")??"";
+  $password = strip_tags($password);
 }  
 
 if ($password !== PHP_STR) {	
