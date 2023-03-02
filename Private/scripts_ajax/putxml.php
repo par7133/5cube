@@ -30,7 +30,8 @@
 //
 // PARAMETER VALIDATION
 //
-$filename = filter_input(INPUT_POST, "f");
+$filename = filter_input(INPUT_POST, "f")??"";
+$filename = strip_tags($filename);
 /*switch ($filename) {
   case "cube1":
   case "cube2":  
@@ -49,7 +50,10 @@ if (preg_match("/cube\d\d\d/", $filename)) {
 }
 $filepath = APP_DATA_PATH . PHP_SLASH . $filename;
 
-$xmlStr = filter_input(INPUT_POST, "xml");
+//chmod(APP_DATA_PATH . PHP_SLASH . $filename, 0777);
+
+$xmlStr = filter_input(INPUT_POST, "xml")??"";
+$xmlStr = strip_tags($xmlStr);
 
 file_put_contents($filepath, $xmlStr);
 
