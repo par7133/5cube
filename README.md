@@ -21,7 +21,7 @@ Every person its prospects. Here your p2p, drag-n-drop solution - GPL License
      <li>In Public/js/cube-code.js, in mystart class method, check if you are using 'http' or 'https'.</li>	
   </ol>	
      
-  Hope you can enjoy it and let us know about any feedback: <a href="mailto:my25mb@aol.com" style="color:#e6d236;">my25mb@aol.com</a>
+  Hope you can enjoy it and let us know about any feedback: <a href="mailto:posta@elettronica.lol" style="color:#e6d236;">posta@elettronica.lol</a>
   
   ###Screenshots:
 
