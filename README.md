@@ -24,7 +24,6 @@ Every person its prospects. Here your p2p, drag-n-drop solution - GPL License
   ###Screenshots:
 
  ![5cube in action](/Public/res/Screenshot1.jpg)<br>
- ![5cube in action](/Public/res/Screenshot2.jpg)<br>
  ![5cube in action](/Public/res/Screenshot3.jpg)
 
- Feedback: <a href="mailto:posta@elettronica.lol" style="color:#e6d236;">posta@elettronica.lol</a>
+ Feedback: <a href="mailto:code@gaox.io" style="color:#e6d236;">code@gaox.io</a>
