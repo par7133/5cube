@@ -36,7 +36,7 @@ define('APP_HASH', "");
 
 define('APP_SPLASH', true);
 
-define('APP_HOST', "5cu.be");
+define('APP_HOST', "yoursitename.xyz");
 define('APP_PATH', "/var/www/YourWebApp/Public");
 define('APP_SCRIPT_PATH', "/var/www/YourWebApp/Private/scripts");
 define('APP_AJAX_PATH', "/var/www/YourWebApp/Private/scripts_ajax");
@@ -66,7 +66,7 @@ $CONFIG = [
       // salt:  
       'HASH' => "",
       'SPLASH' => true,
-      'HOST' => "5cu.be", 
+      'HOST' => "yoursitename.xyz", 
       'PATH' => "/var/www/YourWebApp/Public",
       'SCRIPT_PATH' => "/var/www/YourWebApp/Private/scripts",
       'AJAX_PATH' => "/var/www/YourWebApp/Private/scripts_ajax",
