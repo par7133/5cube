@@ -1,37 +1,28 @@
 # INSTALLATION
    
-  Installing 5 Cube is more straightforward than what it could appear..   
+  Installing this web app is more straightforward than what it could appear.
   
-  First, if you use Nginx as reversed proxy just point the root of your web app to /path/to/Your5cube/Public   
+  First, if you use Nginx as reversed proxy just point the root of your web app to /path/to/YourWebApp/Public/static  
   where the public content is located:
   
   <ol>  
-  <li>The static content hosted should be just of this kind: html, css, js, png, jpg, jpeg, gif, fonts, map, ico</li>   
   <li>Example of Nginx minimal configuration:
-      
-       
-        
-        
      
       server {   
      
         listen 80;
         listen [::]:80;
     
-        server_name yourname-5cube.com;
+        server_name yourservername.xyz;
      
-        root /var/www/Your5cube/Public;
+        root /path/to/YourWebApp/Public/static;
         index index.php; 
        
         location / {     
-          proxy_set_header Host $host;     
-          proxy_set_header X-Real_IP $remote_addr;     
-          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;    
-         
-          proxy_http_version 1.1;     
-          proxy_set_header Connection "";     
-        
-          proxy_pass http://127.0.0.1:8081;        
+           
+           if (!-e $request_filename) {
+             rewrite ^(.+)$ /index.php?url=$1 last;
+           }
         }
      
         location ~* ^.+\.(php)$ {     
@@ -61,6 +52,6 @@
   </li>
   </ol>  
   
-  Apache instead should have DocumentRoot pointing to /path/to/Your5cube/Public .   
+  Apache instead should have DocumentRoot pointing to /path/to/YourWebApp/Public .   
   
   Dan
