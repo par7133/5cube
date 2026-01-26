@@ -850,7 +850,7 @@ if ($password !== PHP_STR) {
 
     <div class="footer">
     <div id="footerCont">&nbsp;</div>
-    <div id="footer"><span style="background:#0d0d0d;color:#d4b0dc;opacity:1.0;margin-right:10px;">&nbsp;&nbsp;A <a href="http://5mode.com" style="color:#d4b0dc; text-decoration:underline;">5 Mode</a> project and <a href="http://demo.5mode.com" style="color:#d4b0dc; text-decoration:underline;">WYSIWYG</a> system. Some rights reserved.</span></div>	
+    <div id="footer"><span style="background:#0d0d0d;color:#d4b0dc;opacity:1.0;margin-right:10px;">&nbsp;&nbsp;A <a href="http://numode.eu" style="color:#d4b0dc; text-decoration:underline;">NuMode</a> project and <a href="http://demo.numode.eu" style="color:#d4b0dc; text-decoration:underline;">WYSIWYG</a> system. Some rights reserved.</span></div>	
     </div>
     
 <?php if (file_exists(APP_PATH . DIRECTORY_SEPARATOR . "metrics.html")): ?>
