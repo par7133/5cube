@@ -21,7 +21,7 @@ Every person its prospects. Here your p2p, drag-n-drop solution - GPL License
      <li>In Public/js/cube-code.js, in mystart class method, check if you are using 'http' or 'https'.</li>	
   </ol>	
 
-  For any need of software additions, plugins and improvements please write to <a href="mailto:info@5mode.com">info@5mode.com</a>  
+  For any need of software additions, plugins and improvements please write to <a href="mailto:info@numode.eu">info@numode.eu</a>  
 
   To help please donate by clicking <a href="https://gaox.io/l/dona1">https://gaox.io/l/dona1</a> and filling the form.  
   
