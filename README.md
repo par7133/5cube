@@ -23,11 +23,11 @@ Every person its prospects. Here your p2p, drag-n-drop solution - GPL License
 
   For any need of software additions, plugins and improvements please write to <a href="mailto:info@numode.eu">info@numode.eu</a>  
 
-  To help please donate by clicking <a href="https://gaox.io/l/dona1">https://gaox.io/l/dona1</a> and filling the form.  
+  To help please donate by clicking <a href="https://gaox.eu/l/dona1">https://gaox.eu/l/dona1</a> and filling the form.  
   
   ###Screenshots:
 
  ![5cube in action](/Public/res/Screenshot1.jpg)<br>
  ![5cube in action](/Public/res/Screenshot3.jpg)
 
- Feedback: <a href="mailto:code@gaox.io" style="color:#e6d236;">code@gaox.io</a>
+ Feedback: <a href="mailto:code@gaox.eu" style="color:#e6d236;">code@gaox.eu</a>
